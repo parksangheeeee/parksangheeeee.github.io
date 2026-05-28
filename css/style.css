@@ -162,6 +162,12 @@ html { scroll-behavior: smooth; }
 }
 
 /* ===================== Publications ===================== */
+#publications li {
+  color: var(--muted);
+}
+#publications strong {
+  color: var(--heading);
+}
 .pub-title {
   display: block;
   margin-bottom: 2px;
