@@ -161,6 +161,12 @@ html { scroll-behavior: smooth; }
   text-align: center;
 }
 
+/* ===================== Publications ===================== */
+.pub-title {
+  display: block;
+  margin-bottom: 2px;
+}
+
 /* ===================== Lists (nested bullets — the core look) ===================== */
 .section ul {
   margin: 0;
