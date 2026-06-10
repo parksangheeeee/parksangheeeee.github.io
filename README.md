@@ -1,8 +1,7 @@
 # Personal CV
 
-A clean, single-column CV page (plain HTML + CSS, no build step), styled after
-[jojoldu.github.io](https://jojoldu.github.io/): left-aligned text header, nested
-bullet lists, monochrome text on white with blue links.
+A clean, single-column CV page — plain HTML + CSS, no build step. Monochrome
+text on white with blue links, print-friendly.
 
 ## Preview locally
 
