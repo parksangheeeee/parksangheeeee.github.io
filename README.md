@@ -16,9 +16,9 @@ python3 -m http.server 8000
 
 | What | Where |
 |------|-------|
-| Name, tagline, all sections | `index.html` (look for `TODO` comments) |
-| Social / contact links | replace the `USERNAME` placeholders in the header of `index.html` |
-| Sections | About Me · Experience · Strengths · Skills · Open Source · Education · External Activities |
+| Name, tagline, content | `index.html` (edit the text under each `<!-- section -->` banner) |
+| Contact links | the three `mailto:` links in the header of `index.html` |
+| Sections | About Me · Publications · Experience · Education |
 | Colors / fonts / spacing | `css/style.css` (CSS variables at the top of the file) |
 
 The page is print-friendly — `Cmd/Ctrl + P` → "Save as PDF" produces a clean
