@@ -18,154 +18,210 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <nav class="topnav">
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
+  <nav class="sitenav" aria-label="Sections">
+    <a href="#about"><span class="sitenav-num">01</span> About</a>
+    <a href="#publications"><span class="sitenav-num">02</span> Publications</a>
+    <a href="#experience"><span class="sitenav-num">03</span> Experience</a>
+    <a href="#education"><span class="sitenav-num">04</span> Education</a>
   </nav>
 
   <main class="page">
 
-    <!-- ===================== Header ===================== -->
-    <header class="header">
-      <h1 class="name">Sanghee Park <span class="name-ko" lang="ko">박상희</span></h1>
-      <p class="tagline">AI Research Engineer at NAVER Cloud<br>Ph.D. Student at KAIST</p>
+    <!-- ===================== Masthead ===================== -->
+    <header class="masthead">
+      <h1 class="name">Sanghee<br />Park <span class="name-ko" lang="ko">박상희</span></h1>
 
-      <ul class="contact">
-        <li>
-          <a href="mailto:parksangheeeee@gmail.com" title="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm16 12V8.24l-8 6.99-8-6.99V18h16z"/></svg>
-            <span>parksangheeeee@gmail.com</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:parksangheeeee@kaist.ac.kr" title="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm16 12V8.24l-8 6.99-8-6.99V18h16z"/></svg>
-            <span>parksangheeeee@kaist.ac.kr</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:sang.hee.park@navercorp.com" title="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm16 12V8.24l-8 6.99-8-6.99V18h16z"/></svg>
-            <span>sang.hee.park@navercorp.com</span>
-          </a>
-        </li>
-      </ul>
+      <div class="masthead-foot">
+        <p class="role">AI Research Engineer, NAVER Cloud<br />Ph.D. Student, KAIST</p>
+
+        <ul class="contact">
+          <li>
+            <span class="contact-label">Personal</span>
+            <a href="mailto:parksangheeeee@gmail.com">parksangheeeee@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">KAIST</span>
+            <a href="mailto:parksangheeeee@kaist.ac.kr">parksangheeeee@kaist.ac.kr</a>
+          </li>
+          <li>
+            <span class="contact-label">NAVER Cloud</span>
+            <a href="mailto:sang.hee.park@navercorp.com">sang.hee.park@navercorp.com</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <!-- ===================== About Me ===================== -->
+    <!-- ===================== 01 About ===================== -->
     <section class="section" id="about">
-      <h2>About Me</h2>
-      <div class="about-wrap">
-        <img class="photo" src="assets/profile.jpg" alt="Sanghee Park" />
-        <div class="about-text">
+      <h2 class="section-head"><span class="section-num">01</span>About</h2>
+
+      <div class="about">
+        <figure class="portrait">
+          <img src="assets/profile.jpg" alt="Sanghee Park" />
+        </figure>
+        <div class="prose">
           <p>I am an AI Research Engineer at <strong>NAVER Cloud</strong> and a Ph.D. student at <strong>KAIST Kim Jaechul Graduate School of AI</strong>, advised by Prof. Kee-Eung Kim at the Artificial Intelligence &amp; Probabilistic Reasoning (AIPR) Lab. My long-term goal is to build multimodal AI that perceives and reasons about the world the way humans do — systems that go beyond processing pixels and tokens, and instead understand context, intent, and uncertainty. Toward this, I work on the vision capabilities of HyperCLOVA X, NAVER's multimodal large language model, while exploring how probabilistic reasoning can make multimodal systems more robust, reliable, and grounded in the real world. I am driven by the belief that AI should become not just more capable, but more trustworthy — genuinely useful to the people who live and work alongside it. My prior work spans document understanding, OCR, and natural language processing, built on a foundation in applied statistics and data science.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== Publications ===================== -->
+    <!-- ===================== 02 Publications ===================== -->
     <section class="section" id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <strong class="pub-title">KCSAT-ML: Probing Reasoning Models with Nationwide-Cohort Human Difficulty.</strong>
-          <strong>Sanghee Park</strong>, Geewook Kim, and Kee-Eung Kim.
-          <em>Findings of EMNLP 2026</em>.
-          <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.10403">paper</a>
+      <h2 class="section-head"><span class="section-num">02</span>Publications</h2>
+
+      <ul class="entries">
+        <li class="entry">
+          <h3 class="entry-title">KCSAT-ML: Probing Reasoning Models with Nationwide-Cohort Human Difficulty</h3>
+          <p class="entry-authors"><strong>Sanghee Park</strong>, Geewook Kim, and Kee-Eung Kim</p>
+          <p class="entry-meta">
+            <span class="venue">Findings of EMNLP 2026</span>
+            <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.10403">paper</a>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">RISM-VLM: A Multi-Axis Discriminative Benchmark for Compact Vision-Language Models.</strong>
-          <strong>Sanghee Park</strong> and Kee-Eung Kim.
-          <em>Findings of EMNLP 2026</em>.
+        <li class="entry">
+          <h3 class="entry-title">RISM-VLM: A Multi-Axis Discriminative Benchmark for Compact Vision-Language Models</h3>
+          <p class="entry-authors"><strong>Sanghee Park</strong> and Kee-Eung Kim</p>
+          <p class="entry-meta">
+            <span class="venue">Findings of EMNLP 2026</span>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation.</strong>
-          Hodong Lee, <strong>Sanghee Park</strong>, Dohoon Ryu, Jungwhan Kim, Junyeob Kim, Soyoon Kim, and Geewook Kim.
-          <em>Proceedings of EMNLP 2026 (System Demonstrations)</em>.
-          <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2609.01315">paper</a>
-          <a target="_blank" rel="noopener" href="https://github.com/naver-ai/omni-evaluator">code</a>
+        <li class="entry">
+          <h3 class="entry-title">A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation</h3>
+          <p class="entry-authors">Hodong Lee, <strong>Sanghee Park</strong>, Dohoon Ryu, Jungwhan Kim, Junyeob Kim, Soyoon Kim, and Geewook Kim</p>
+          <p class="entry-meta">
+            <span class="venue">Proceedings of EMNLP 2026 (System Demonstrations)</span>
+            <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2609.01315">paper</a>
+            <a class="ref" target="_blank" rel="noopener" href="https://github.com/naver-ai/omni-evaluator">code</a>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge.</strong>
-          Sua Lee, <strong>Sanghee Park</strong>, and Jinbae Im.
-          <em>Proceedings of ACL 2026 (Main Conference)</em>.
-          <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2604.18164">paper</a>
+        <li class="entry">
+          <h3 class="entry-title">MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge</h3>
+          <p class="entry-authors">Sua Lee, <strong>Sanghee Park</strong>, and Jinbae Im</p>
+          <p class="entry-meta">
+            <span class="venue">Proceedings of ACL 2026 (Main Conference)</span>
+            <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2604.18164">paper</a>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">Evaluating Multimodal Generative AI with Korean Educational Standards.</strong>
-          <strong>Sanghee Park</strong> and Geewook Kim.
-          <em>Proceedings of NAACL 2025 (Main Conference)</em>, pages 671–688, Albuquerque, NM.
-          <a target="_blank" rel="noopener" href="https://aclanthology.org/2025.naacl-short.56/">paper</a>
+        <li class="entry">
+          <h3 class="entry-title">Evaluating Multimodal Generative AI with Korean Educational Standards</h3>
+          <p class="entry-authors"><strong>Sanghee Park</strong> and Geewook Kim</p>
+          <p class="entry-meta">
+            <span class="venue">Proceedings of NAACL 2025 (Main Conference), pages 671–688, Albuquerque, NM</span>
+            <a class="ref" target="_blank" rel="noopener" href="https://aclanthology.org/2025.naacl-short.56/">paper</a>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">Visually-Situated Natural Language Understanding with Contrastive Reading Model and Frozen Large Language Models.</strong>
-          Geewook Kim, Hodong Lee, Daehee Kim, Haeji Jung, <strong>Sanghee Park</strong>, Yoonsik Kim, Sangdoo Yun, Taeho Kil, Bado Lee, and Seunghyun Park.
-          <em>Proceedings of EMNLP 2023 (Main Conference)</em>, pages 11989–12010, Singapore.
-          <a target="_blank" rel="noopener" href="https://aclanthology.org/2023.emnlp-main.735/">paper</a>
+        <li class="entry">
+          <h3 class="entry-title">Visually-Situated Natural Language Understanding with Contrastive Reading Model and Frozen Large Language Models</h3>
+          <p class="entry-authors">Geewook Kim, Hodong Lee, Daehee Kim, Haeji Jung, <strong>Sanghee Park</strong>, Yoonsik Kim, Sangdoo Yun, Taeho Kil, Bado Lee, and Seunghyun Park</p>
+          <p class="entry-meta">
+            <span class="venue">Proceedings of EMNLP 2023 (Main Conference), pages 11989–12010, Singapore</span>
+            <a class="ref" target="_blank" rel="noopener" href="https://aclanthology.org/2023.emnlp-main.735/">paper</a>
+          </p>
         </li>
-        <li>
-          <strong class="pub-title">Augmentation of Training Data for Named Entity Recognition Models Using Replacement.</strong>
-          <strong>Sanghee Park</strong>.
-          <em>Master's Thesis</em>, Sungkyunkwan University, 2022.
+        <li class="entry">
+          <h3 class="entry-title">Augmentation of Training Data for Named Entity Recognition Models Using Replacement</h3>
+          <p class="entry-authors"><strong>Sanghee Park</strong></p>
+          <p class="entry-meta">
+            <span class="venue">Master's Thesis, Sungkyunkwan University, 2022</span>
+          </p>
         </li>
       </ul>
     </section>
 
-    <!-- ===================== Experience ===================== -->
+    <!-- ===================== 03 Experience ===================== -->
     <section class="section" id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          AI Research Engineer, <a target="_blank" rel="noopener" href="https://www.ncloud.com"><strong>NAVER Cloud Corp.</strong></a>, Seongnam <span class="muted">(Jan. 2023 – Present)</span>
+      <h2 class="section-head"><span class="section-num">03</span>Experience</h2>
+
+      <ul class="entries">
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">AI Research Engineer</h3>
+            <p class="entry-org"><a target="_blank" rel="noopener" href="https://www.ncloud.com">NAVER Cloud Corp.</a>, Seongnam</p>
+          </div>
+          <p class="entry-when">Jan. 2023 – Present</p>
         </li>
-        <li>
-          AI Research Engineer, <a target="_blank" rel="noopener" href="https://www.navercorp.com"><strong>NAVER Corp.</strong></a>, Seongnam <span class="muted">(Nov. 2021 – Dec. 2022)</span>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">AI Research Engineer</h3>
+            <p class="entry-org"><a target="_blank" rel="noopener" href="https://www.navercorp.com">NAVER Corp.</a>, Seongnam</p>
+          </div>
+          <p class="entry-when">Nov. 2021 – Dec. 2022</p>
         </li>
-        <li>
-          NLP Mentor, <a target="_blank" rel="noopener" href="https://boostcamp.connect.or.kr"><strong>Boostcamp AI Tech</strong></a>, Online <span class="muted">(Jan. 2021 – Dec. 2021)</span>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">NLP Mentor</h3>
+            <p class="entry-org"><a target="_blank" rel="noopener" href="https://boostcamp.connect.or.kr">Boostcamp AI Tech</a>, Online</p>
+          </div>
+          <p class="entry-when">Jan. 2021 – Dec. 2021</p>
         </li>
-        <li>
-          NLP Engineer, <a target="_blank" rel="noopener" href="https://engine.roa.ai"><strong>ROA Intelligence</strong></a>, Seoul <span class="muted">(May 2020 – Oct. 2021)</span>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">NLP Engineer</h3>
+            <p class="entry-org"><a target="_blank" rel="noopener" href="https://engine.roa.ai">ROA Intelligence</a>, Seoul</p>
+          </div>
+          <p class="entry-when">May 2020 – Oct. 2021</p>
         </li>
-        <li>
-          ML Engineer Intern, <a target="_blank" rel="noopener" href="https://www.dna.uno"><strong>Data&amp;Analytics</strong></a>, Seoul <span class="muted">(Jan. 2020 – Mar. 2020)</span>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">ML Engineer Intern</h3>
+            <p class="entry-org"><a target="_blank" rel="noopener" href="https://www.dna.uno">Data&amp;Analytics</a>, Seoul</p>
+          </div>
+          <p class="entry-when">Jan. 2020 – Mar. 2020</p>
         </li>
       </ul>
     </section>
 
-    <!-- ===================== Education ===================== -->
+    <!-- ===================== 04 Education ===================== -->
     <section class="section" id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          Ph.D. in Artificial Intelligence, <strong>Kim Jaechul Graduate School of AI, KAIST</strong>, Korea <span class="muted">(Sep. 2025 – Present)</span>
-          <ul>
-            <li>Major : <a target="_blank" rel="noopener" href="https://gsai.kaist.ac.kr/">Artificial Intelligence</a></li>
-            <li>Laboratory : <a target="_blank" rel="noopener" href="https://ailab.kaist.ac.kr/">Artificial Intelligence &amp; Probabilistic Reasoning Lab (AIPR Lab)</a></li>
-            <li>Advisor : Prof. <a target="_blank" rel="noopener" href="https://ailab.kaist.ac.kr/people/kekim">Kee-Eung Kim</a></li>
-          </ul>
+      <h2 class="section-head"><span class="section-num">04</span>Education</h2>
+
+      <ul class="entries">
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">Ph.D. in Artificial Intelligence</h3>
+            <p class="entry-org">Kim Jaechul Graduate School of AI, KAIST, Korea</p>
+            <dl class="facts">
+              <dt>Major</dt>
+              <dd><a target="_blank" rel="noopener" href="https://gsai.kaist.ac.kr/">Artificial Intelligence</a></dd>
+              <dt>Lab</dt>
+              <dd><a target="_blank" rel="noopener" href="https://ailab.kaist.ac.kr/">Artificial Intelligence &amp; Probabilistic Reasoning Lab</a></dd>
+              <dt>Advisor</dt>
+              <dd>Prof. <a target="_blank" rel="noopener" href="https://ailab.kaist.ac.kr/people/kekim">Kee-Eung Kim</a></dd>
+            </dl>
+          </div>
+          <p class="entry-when">Sep. 2025 – Present</p>
         </li>
-        <li>
-          M.S. in Data Science, <strong>Sungkyunkwan University</strong>, Korea <span class="muted">(Mar. 2020 – Aug. 2022)</span>
-          <ul>
-            <li>Major : <a target="_blank" rel="noopener" href="https://ads.skku.edu/ads/index.do">Applied Data Science</a></li>
-            <li>Laboratory : <a target="_blank" rel="noopener" href="https://dramatic-samba-372.notion.site/main-Lab-SKKU-3126248cf3c440d1bc31fe77913a01ec">Machine Intelligence Lab.</a></li>
-            <li>Advisor : Prof. <a target="_blank" rel="noopener" href="https://sites.google.com/view/skku-milab/home?authuser=0">Jae-Kwang Kim</a></li>
-          </ul>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">M.S. in Data Science</h3>
+            <p class="entry-org">Sungkyunkwan University, Korea</p>
+            <dl class="facts">
+              <dt>Major</dt>
+              <dd><a target="_blank" rel="noopener" href="https://ads.skku.edu/ads/index.do">Applied Data Science</a></dd>
+              <dt>Lab</dt>
+              <dd><a target="_blank" rel="noopener" href="https://dramatic-samba-372.notion.site/main-Lab-SKKU-3126248cf3c440d1bc31fe77913a01ec">Machine Intelligence Lab</a></dd>
+              <dt>Advisor</dt>
+              <dd>Prof. <a target="_blank" rel="noopener" href="https://sites.google.com/view/skku-milab/home?authuser=0">Jae-Kwang Kim</a></dd>
+            </dl>
+          </div>
+          <p class="entry-when">Mar. 2020 – Aug. 2022</p>
         </li>
-        <li>
-          B.S. in Statistics, <strong>Hanshin University</strong>, Korea <span class="muted">(Mar. 2014 – Feb. 2020)</span>
-          <ul>
-            <li>Major : <a target="_blank" rel="noopener" href="https://www.hs.ac.kr/hsstats/index.do">Applied Statistics</a></li>
-          </ul>
+        <li class="entry entry--row">
+          <div class="entry-main">
+            <h3 class="entry-title">B.S. in Statistics</h3>
+            <p class="entry-org">Hanshin University, Korea</p>
+            <dl class="facts">
+              <dt>Major</dt>
+              <dd><a target="_blank" rel="noopener" href="https://www.hs.ac.kr/hsstats/index.do">Applied Statistics</a></dd>
+            </dl>
+          </div>
+          <p class="entry-when">Mar. 2014 – Feb. 2020</p>
         </li>
       </ul>
     </section>

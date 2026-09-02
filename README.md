@@ -1,7 +1,8 @@
 # Personal CV
 
-A clean, single-column CV page — plain HTML + CSS, no build step. Monochrome
-text on white with blue links, print-friendly.
+A single-column CV page in the Swiss / International Typographic Style —
+plain HTML + CSS, no build step. Black text on white with one blue accent,
+flush-left in an asymmetric field, print-friendly.
 
 ## Preview locally
 
@@ -18,8 +19,8 @@ python3 -m http.server 8000
 |------|-------|
 | Name, tagline, content | `index.html` (edit the text under each `<!-- section -->` banner) |
 | Contact links | the three `mailto:` links in the header of `index.html` |
-| Sections | About Me · Publications · Experience · Education |
-| Colors / fonts / spacing | `css/style.css` (CSS variables at the top of the file) |
+| Sections | 01 About · 02 Publications · 03 Experience · 04 Education |
+| Colors / fonts / spacing | `css/style.css` (CSS variables at the top — `--accent` is the single accent color) |
 
 The page is print-friendly — `Cmd/Ctrl + P` → "Save as PDF" produces a clean
 document (nav and social icons are hidden in print).
