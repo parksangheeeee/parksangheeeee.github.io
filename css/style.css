@@ -96,7 +96,7 @@ strong { font-weight: 600; color: var(--ink); }
 
 .name {
   font-family: var(--display);
-  font-size: clamp(2.25rem, 8.5vw, 7rem);
+  font-size: clamp(2rem, 5.5vw, 4.25rem);
   font-weight: 600;
   line-height: 0.95;
   text-wrap: nowrap;
@@ -106,7 +106,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .name-ko {
   font-family: var(--korean);
-  font-size: clamp(1rem, 2vw, 1.375rem);
+  font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
   font-weight: 400;
   letter-spacing: 0;
   color: var(--ink-mute);
