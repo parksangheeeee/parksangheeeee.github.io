@@ -96,9 +96,10 @@ strong { font-weight: 600; color: var(--ink); }
 
 .name {
   font-family: var(--display);
-  font-size: clamp(3.25rem, 11.5vw, 6.5rem);
+  font-size: clamp(2.25rem, 8.5vw, 7rem);
   font-weight: 600;
-  line-height: 0.88;
+  line-height: 0.95;
+  text-wrap: nowrap;
   letter-spacing: -0.045em;
   color: var(--ink);
   margin: 0 0 clamp(1.75rem, 4vw, 2.75rem);
@@ -248,16 +249,18 @@ strong { font-weight: 600; color: var(--ink); }
 /* ===================== About ===================== */
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 36em) 220px;
-  justify-content: space-between;
-  gap: clamp(1.5rem, 4vw, 2.75rem);
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: clamp(1.5rem, 4vw, 3rem);
   align-items: start;
 }
 .prose { grid-column: 1; grid-row: 1; }
 .prose p {
   margin: 0;
-  max-width: 36em;
+  max-width: 52em;
   line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 .portrait {
   grid-column: 2;
@@ -286,6 +289,9 @@ strong { font-weight: 600; color: var(--ink); }
   .portrait { grid-column: 1; grid-row: 1; width: 132px; }
   .entry--row { grid-template-columns: minmax(0, 1fr); }
   .entry-when { text-align: left; margin-top: 0.35rem; }
+}
+@media (max-width: 560px) {
+  .prose p { text-align: left; hyphens: manual; }
 }
 @media (max-width: 480px) {
   body { font-size: 15px; }
